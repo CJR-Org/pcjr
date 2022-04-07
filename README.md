@@ -10,9 +10,10 @@ You can then remove the directory created by cloning.
 # Usage
 ## Adding a package
 ### Installing specific package
-`pcjr install <package_name>`
+`pcjr install <package_name> <version (optional)>`
 
 Note: Installing a package automatically adds it to packages.json
+Note: Not specifying a version will download the latest
 
 ### Installing all packages in packages.json
 `pcjr install`
