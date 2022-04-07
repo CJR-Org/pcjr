@@ -1,9 +1,9 @@
 # pcjr - the cjr package manager
 
 # Installation
-`git clone https://github.com/CJR-Org/pcjr  
-cd pcjr  
-sudo make install`
+```git clone https://github.com/CJR-Org/pcjr```  
+```cd pcjr```  
+```sudo make install```
 
 You can then remove the directory created by cloning.
 
