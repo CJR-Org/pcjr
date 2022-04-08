@@ -46,8 +46,7 @@ switch(Deno.args[0]) {
             Deno.removeSync(`modules/${Deno.args[1]}`, {recursive: true});
         } catch {}
 
-        if(packages["packages"][Deno.args[1]]) {
-            console.log("in package.json");
+        if(packages["packages"].hasOwnProperty(Deno.args[1])) {
             delete packages["packages"][Deno.args[1]];
             Deno.writeTextFileSync("packages.json", JSON.stringify(packages));
         }
