@@ -1,10 +1,8 @@
-// import { ensureDirSync } from "https://deno.land/std/fs/mod.ts";
-
 async function install(pkg, version) {
-    const response = await fetch(`https://moduland.ml/fetch_pkg/${pkg}`);
+    const response = await fetch(`https://moduland.ml/pkg/pull/${pkg}`);
     const pkg_data = await response.json();
     const url = pkg_data.url;
-    console.log(url); 
+
     let clone;
     
     if(version) {
